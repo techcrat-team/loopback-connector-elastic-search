@@ -11,7 +11,7 @@
     "compression": "^1.0.3",
     "debug": "^2.2.0",
     "errorhandler": "^1.1.1",
-    "lodash": "^3.9.3",
+    "lodash": "^4.17.19",
     "loopback": "^2.0.0",
     "loopback-boot": "^2.0.0",
     "loopback-connector-es": "git+ssh://git@github.com/techcrat-team/loopback-connector-elastic-search.git",
