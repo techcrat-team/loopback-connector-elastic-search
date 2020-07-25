@@ -1,0 +1,24 @@
+{
+  "name": "example",
+  "version": "0.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "pretest": "jshint ."
+  },
+  "dependencies": {
+    "async": "2.6.1",
+    "bluebird": "^2.9.27",
+    "compression": "^1.0.3",
+    "debug": "^2.2.0",
+    "errorhandler": "^1.1.1",
+    "lodash": "^3.9.3",
+    "loopback": "^2.0.0",
+    "loopback-boot": "^2.0.0",
+    "loopback-connector-es": "git+ssh://git@github.com/techcrat-team/loopback-connector-elastic-search.git",
+    "loopback-datasource-juggler": "^2.7.0",
+    "serve-favicon": "^2.0.1"
+  },
+  "optionalDependencies": {
+    "loopback-explorer": "^1.1.0"
+  }
+}

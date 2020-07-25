@@ -1,0 +1,99 @@
+{
+  "name": "TransactionsReporting",
+  "plural": "TransactionsReportings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "indexes": {},
+  "properties": {
+    "id": {
+      "type": "Number",
+      "required": true,
+      "es": {
+        "type": "long"
+      }
+    },
+    "isActive": {
+      "type": "Boolean",
+      "required": true,
+      "default": true,
+      "es": {
+        "type": "boolean"
+      }
+    },
+    "createdDate": {
+      "type": "Date",
+      "required": true,
+      "es": {
+        "type": "date"
+      }
+    },
+    "lastModifiedDate": {
+      "type": "Date",
+      "required": true,
+      "es": {
+        "type": "date"
+      }
+    },
+    "bosCode": {
+      "type": "String",
+      "es": {
+        "type": "text"
+      }
+    },
+    "nseCode": {
+      "type": "String",
+      "es": {
+        "type": "text"
+      }
+    },
+    "bseCode": {
+      "type": "String",
+      "es": {
+        "type": "text"
+      }
+    },
+    "transactionDate": {
+      "type": "Date",
+      "es": {
+        "type": "date"
+      }
+    },
+    "quantity": {
+      "type": "Number",
+      "es": {
+        "type": "double"
+      }
+    },
+    "price": {
+      "type": "Number",
+      "es": {
+        "type": "double"
+      }
+    }
+  },
+  "elasticsearch": {
+    "index": "transactionsreporting4",
+    "type": "transaction4",
+    "settings": {
+      "index": {
+        "search": {
+          "slowlog": {
+            "threshold": {
+              "fetch": {
+                "debug": "500ms"
+              },
+              "query": {
+                "warn": "10s"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {},
+  "hidden": []
+}

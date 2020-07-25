@@ -1,0 +1,46 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory",
+    "file": "db.json"
+  },
+  "elasticsearch-plain": {
+    "name": "elasticsearch-plain",
+    "connector": "es",
+    "index": "shakespeare",
+    "hosts": [
+      {
+        "host": "localhost",
+        "port": 9243
+      }
+    ],
+    "apiVersion": "1.1",
+    "log": "trace",
+    "defaultSize": 50,
+    "requestTimeout": 30000
+  },
+  "esReporting": {
+    "host": "localhost",
+    "port": 9200,
+    "name": "esReporting",
+    "refreshOn": [
+      "*"
+    ],
+    "apiVersion": "5.x",
+    "connector": "es",
+    "requestTimeout": 30000,
+    "settings": {
+      "index": {
+        "indexing": {
+          "slowlog": {
+            "threshold": {
+              "index": {
+                "info": "5s"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
